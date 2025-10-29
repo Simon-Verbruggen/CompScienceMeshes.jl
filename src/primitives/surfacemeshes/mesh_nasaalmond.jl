@@ -19,7 +19,7 @@ for 0 < t < t2, -pi < psi < pi
 The target edge size is `h`.
 """
 
-function meshnasaalmond(h)
+function meshnasaalmond(d, h)
 
     fno = tempname() * ".msh"
     gmsh.initialize()
@@ -27,7 +27,6 @@ function meshnasaalmond(h)
     gmsh.model.add("nasaalmond")
 
     # parameters
-    d = 9.936
     t1= -0.416667
     t2 = 1 + t1
     x1, x2 = -t1, t2/0.28
