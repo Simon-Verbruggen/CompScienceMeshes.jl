@@ -9,7 +9,10 @@ include("surfacemeshes/mesh_icosphere.jl")
 include("surfacemeshes/mesh_mobius.jl")
 include("surfacemeshes/mesh_rectangle.jl")
 include("surfacemeshes/mesh_sphere.jl")
+
 include("surfacemeshes/mesh_nasaalmond.jl")
+include("surfacemeshes/mesh_ellipsoid.jl")
+
 
 include("volumemeshes/mesh_cuboid.jl")
 include("volumemeshes/mesh_sphere.jl")

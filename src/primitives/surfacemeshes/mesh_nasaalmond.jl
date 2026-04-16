@@ -44,7 +44,7 @@ function meshnasaalmond(d, h)
     
     gmsh.model.geo.addPoint(0.0, y1*d, 0.0, h, 2)
     gmsh.model.geo.addPoint(0.0, -y1*d, 0.0, h, 3)
-    gmsh.model.geo.addPoint(fxy1, 0.0, 0.0, h, 4)
+    gmsh.model.geo.addPoint(fxy1*d, 0.0, 0.0, h, 4)
 
     gmsh.model.geo.addEllipseArc(3, 0, 4, 1, 1)
     gmsh.model.geo.addEllipseArc(1, 0, 4, 2, 2)
@@ -52,13 +52,13 @@ function meshnasaalmond(d, h)
 
     gmsh.model.geo.addPoint(0.0, 0.0, z1*d, h, 5)
     gmsh.model.geo.addPoint(0.0, 0.0, -z1*d, h, 6)
-    gmsh.model.geo.addPoint(fxz1, 0.0, 0.0, h, 7)
+    gmsh.model.geo.addPoint(fxz1*d, 0.0, 0.0, h, 7)
 
     gmsh.model.geo.addEllipseArc(6, 0, 7, 1, 3)
     gmsh.model.geo.addEllipseArc(1, 0, 7, 5, 4)
 
-    gmsh.model.geo.addPoint(0.0, fyz1, 0.0, h, 8)
-    gmsh.model.geo.addPoint(0.0, -fyz1, 0.0, h, 9)
+    gmsh.model.geo.addPoint(0.0, fyz1*d, 0.0, h, 8)
+    gmsh.model.geo.addPoint(0.0, -fyz1*d, 0.0, h, 9)
 
     gmsh.model.geo.addEllipseArc(5, 0, 8, 2, 5)
     gmsh.model.geo.addEllipseArc(2, 0, 8, 6, 6)
